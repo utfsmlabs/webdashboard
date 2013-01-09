@@ -1,4 +1,16 @@
 Webdashboard::Application.routes.draw do
+  get "home/index"
+
+  match "/lpa" => 'home#lpa'
+
+  match "/lds" => 'home#lds'
+
+  match "/sda" => 'home#sda'
+
+  match "/ninja" => 'home#ninja'
+
+  match "/tasks" => 'home#tasks'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +60,7 @@ Webdashboard::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
