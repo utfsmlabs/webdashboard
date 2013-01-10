@@ -20,18 +20,18 @@
   %body
     .container
       .row
-        %a.span12.well.toprow{:href=>'/ninja'}
+        %a#upperpanel.span12.well.toprow{:href=>'/ninja'}
           %i.icon-angle-up.span1.offset6
       .row.medrow
-        %a.span1.well.sidecol{:href=>'/sda'}
+        %a#leftpanel.span1.well.sidecol{:href=>'/sda'}
           %i.icon-angle-left.middle
         .span10.well.centercol
           = bootstrap_flash
           = yield
-        %a.span1.well.sidecol{:href=>'/lds'}
+        %a#rightpanel.span1.well.sidecol{:href=>'/lds'}
           %i.icon-angle-right.middle
       .row
-        %a.span12.well.toprow{:href=>'/tasks'}
+        %a#bottompanel.span12.well.toprow{:href=>'/tasks'}
           %i.icon-angle-down.span1.offset6
     /
       Javascripts
