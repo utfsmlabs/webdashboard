@@ -20,16 +20,19 @@
   %body
     .container
       .row
-        .span12.well.toprow
-
+        .span12.well.toprow.stealth
+          %i.icon-angle-up.span1.offset6
       .row.medrow
-        .span1.well.sidecol
+        .span1.well.sidecol.stealth
+          %i.icon-angle-left.middle
         .span10.well.centercol
           = bootstrap_flash
           = yield
-        .span1.well.sidecol
+        %a.span1.well.sidecol{:href=>'/lpa'}
+          %i.icon-angle-right.middle
       .row
-        .span12.well.toprow
+        .span12.well.toprow.stealth
+          %i.icon-angle-down.span1.offset6
     /
       Javascripts
       \==================================================
