@@ -15,7 +15,6 @@ unselect = (elem) ->
 select($('#leftpanel'))
 
 move = (position) ->
-	alert("actualmente esta seleccionado:"+$('.selected').first().attr('id'))
 	switch $('.selected').first().attr('id')
 		when 'leftpanel'
 			switch position
@@ -51,7 +50,7 @@ move = (position) ->
 					select($('#rightpanel'))
 				when 'up'
 					unselect($('#centerpanel'))
-					select($('#toppanel'))
+					select($('#upperpanel'))
 				when 'down'
 					unselect($('#centerpanel'))
 					select($('#bottompanel'))
