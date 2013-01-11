@@ -20,18 +20,18 @@
   %body
     .container
       .row
-        .span12.well.toprow.stealth
+        %a#upperpanel.span12.well.toprow.stealth
           %i.icon-angle-up.span1.offset6
       .row.medrow
-        %a.span1.well.sidecol{:href=>'/lpa'}
+        %a#leftpanel.span1.well.sidecol{:href=>'/lpa'}
           %i.icon-angle-left.middle
-        .span10.well.centercol
+        #centerpanel.span10.well.centercol
           = bootstrap_flash
           = yield
-        .span1.well.sidecol.stealth
+        %a#rightpanel.span1.well.sidecol.stealth
           %i.icon-angle-right.middle
       .row
-        .span12.well.toprow.stealth
+        %a#bottompanel.span12.well.toprow.stealth
           %i.icon-angle-down.span1.offset6
     /
       Javascripts
