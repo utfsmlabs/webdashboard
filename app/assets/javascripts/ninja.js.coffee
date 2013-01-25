@@ -6,6 +6,7 @@ document.onkeydown = (e)->
 		switch (keyCode)
 			when arrow.left then movecam('left')
 			when arrow.right then movecam('right')
+			when arrow.down then movecam('down')
 			when action.enter then entercam($('.subselected').first())
 			when action.escape then  escapecam($('.subselected').first())  	
 	else
@@ -122,17 +123,21 @@ move = (position) ->
 					select($('#rightpanel'))
 				when 'up'
 					unselect($('#bottompanel'))
-					select($('#centerpanel'))
+					$('#centerpanel').addClass('sub-selected')
+					$('#cam2').addClass('subselected')
 		else
 			switch position
 				when 'left'
-					select($('#centerpanel'))
+					$('#centerpanel').addClass('sub-selected')
+					$('#cam3').addClass('subselected')
 				when 'right'
-					select($('#centerpanel'))
+					$('#centerpanel').addClass('sub-selected')
+					$('#cam1').addClass('subselected')
 				when 'up'
 					select($('#bottompanel'))
 				when 'down'
-					select($('#centerpanel'))
+					$('#centerpanel').addClass('sub-selected')
+					$('#cam2').addClass('subselected')
 
 
 movecam = (position) ->
@@ -145,6 +150,11 @@ movecam = (position) ->
 				when 'right'
 					selected.removeClass('subselected')
 					$('#cam2').addClass('subselected')
+				when 'down'
+					selected.removeClass('subselected')
+					$('#centerpanel').removeClass('sub-selected')
+					select($('#bottompanel'))
+
 		when 'cam2'
 			switch position
 				when 'left'
@@ -153,6 +163,10 @@ movecam = (position) ->
 				when 'right'
 					selected.removeClass('subselected')
 					$('#cam3').addClass('subselected')
+				when 'down'
+					selected.removeClass('subselected')
+					$('#centerpanel').removeClass('sub-selected')
+					select($('#bottompanel'))
 		when 'cam3'
 			switch position
 				when 'left'
@@ -160,6 +174,10 @@ movecam = (position) ->
 					$('#cam2').addClass('subselected')
 				when 'right'
 					selected.removeClass('subselected')
+				when 'down'
+					selected.removeClass('subselected')
+					$('#centerpanel').removeClass('sub-selected')
+					select($('#bottompanel'))
 
 
 TIMEOUT = 1000;

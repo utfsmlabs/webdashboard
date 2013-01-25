@@ -32,10 +32,23 @@
 // @linkColor: #ff0000;
 html{
 	height: 100%;
+	min-width: 1960px;
+	max-width: 1960px;
 }
 body{
 	height: 100%;
+	min-width: 1960px;
+	max-width: 1960px;
 	overflow:hidden;
+}
+.borders{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 1960px;
+	height: 1080px;
+	border-style:solid;
+	border-width:5px;
 }
 .container{
 	width: 95%;
@@ -54,7 +67,7 @@ body{
 	width: 95%;
 }
 .medrow{
-	height: 72%;
+	height: 77%;
 }
 .sidecol{
 	opacity:0.1;
@@ -63,7 +76,7 @@ body{
 }
 .centercol{
 	height: 100%; 
-	width:82%;
+	width:85%;
 }
 .middle{
 	position:absolute;
@@ -71,6 +84,10 @@ body{
 }
 .stealth{
 	visibility:hidden;
+}
+.phantomwell{
+	background-color:rgba(0,0,0,0);
+	border:0px solid;
 }
 .selected{
 	opacity:0.8;
@@ -86,7 +103,6 @@ body{
 }
 .sub-selected{
 	opacity:1;
-	background-color:rgba(0,0,0,0);
 }
 .centered {
 	width: 100%;
@@ -107,19 +123,40 @@ body{
 }
 .lpa{
 	background-image:url('/assets/nyancat.png');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
 }
 .tasks{
-	background-image:url('/assets/itcrowd.jpg');
+	background-image:url('/assets/nyancat.png');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
 }
 .sda{
 	background-image:url('/assets/nyancat.png');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
 }
 .lds{
 	background-image:url('/assets/nyancat.png');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
 }
 .ninja{
 	background-image:url('/assets/sauron.jpg');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
 }
 .mainmenu{
-	background-image:url('/assets/nyancat.png');
+	background-image:url('/assets/itcrowd.jpg');
+	background-repeat:no-repeat;
+	background-size: 1960px 1080px;
+}
+.modal-body {
+    max-height: 1000px;
+    max-width:	1000px;
+    overflow: hidden;
+}
+.modalcam{
+	width:900px;
+	left:45%;
 }
