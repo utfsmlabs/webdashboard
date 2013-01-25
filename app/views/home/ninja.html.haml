@@ -1,2 +1,24 @@
-%h1 Home#ninja
-%p Find me in app/views/home/ninja.html.haml
+.row.menurow
+.row.menurow
+	#cam1.span3.well(camara_id="1")
+		%img(src="" id="camera1" style="height:200px;")
+	#cam2.span3.well(camara_id="2")
+		%img(src="" id="camera2" style="height:200px;")
+	#cam3.span3.well(camara_id="3")
+		%img(src="" id="camera3" style="height:200px;")
+
+#modalcam1.modal.fade.hide
+	.modal-header
+		%h3="Camara 1"
+	.modal-body
+		%img(src="" id="modcamera1" style="height:400px;")
+#modalcam2.modal.fade.hide
+	.modal-header
+		%h3="Camara 2"
+	.modal-body
+		%img(src="" id="modcamera2" style="height:400px;")
+#modalcam3.modal.fade.hide
+	.modal-header
+		%h3="Camara 1"
+	.modal-body
+		%img(src="" id="modcamera3" style="height:400px;")

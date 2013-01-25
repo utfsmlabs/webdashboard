@@ -29,6 +29,7 @@ enter = (elem) ->
 	else
 		if elem.attr('id')=='centerpanel'
 			unselect($('#centerpanel'))
+			$('#centerpanel').addClass('sub-selected')
 			$('#tareas tr').eq(1).addClass('info')
 
 escape = (elem) ->
@@ -51,6 +52,7 @@ escapetask = (elem) ->
 		if $('.info').length != 0
 			$('.info').first().removeClass('info')
 			select($('#centerpanel'))
+			$('#centerpanel').removeClass('sub-selected')
 
 move = (position) ->
 	switch $('.selected').first().attr('id')
