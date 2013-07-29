@@ -1,0 +1,106 @@
+// Place all the styles related to the Dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.title {
+  content: "Example";
+  position: relative;
+  top: -1px;
+  left: -1px;
+  padding: 5px 7px;
+  font-size: 12px;
+  background-color: #E9F2F9;
+}
+
+html {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+  background-image:url('/assets/bg.png');
+  margin: 0;
+}
+
+.container-fluid {
+    padding: 0px 5px;
+}
+
+.content-left {
+  width: 900px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.header-title {
+  width: 750px;
+  float: left;
+  background-color: rgba(59, 89, 152, 0.9);
+  padding: 10px;
+  margin: 5px 10px 0 0;
+  font-size: 24px;
+  min-height: 90px;
+}
+
+.header-time {
+  width: 100px;
+  float: left;
+  background-color: rgba(59, 89, 152, 0.9);
+  padding: 25px 10px;
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  min-height: 66px;
+}
+
+.inner-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+.content-main-left {
+  width: 600px;
+  float: left;
+}
+
+.content-main-left .content {
+  background-color: rgba(59, 89, 152, 0.9);
+  padding: 5px;
+  margin: 5px 10px 0 0;
+}
+
+.content-main-left-bottom .content {
+  width: 280px;
+  float: left;
+}
+
+.content-main-right {
+  width: 300px;
+  float: left;
+}
+
+.content-main-right .content {
+  background-color: rgba(59, 89, 152, 0.9);
+  padding: 5px;
+  margin: 5px 0 0 0;
+}
+
+.content-right {
+  width: 330px;
+  float: right;
+  margin: 0;
+}
+
+.content-right .content {
+  background-color: rgba(59, 89, 152, 0.9);
+  padding: 5px;
+  margin: 5px 0 0 0;
+  
+}
+
+.content-right .content img {
+  max-height: 220px;
+}
+
+.content-right .content iframe {
+  max-height: 220px;
+}

@@ -1,0 +1,45 @@
+.container-fluid
+  .row-fluid
+    .content-left
+      .row-fluid{:style=>"font-size: 24pt;"}
+        .header-title
+          =image_tag("DI.png")
+        .header-time
+          =Time.now.strftime("%I:%M%p")
+          =Time.now.strftime("%d-%m")
+      .row-fluid
+        .content-main-left
+          .content  
+            =image_tag("tareas.png")
+            .inner-content  
+              #code
+          .content
+            =image_tag("reddi.png")
+            .inner-content
+              %img#red
+          .content-main-left-bottom
+            .content
+              =image_tag("icinga_server.png")
+              .inner-content
+                #servicios         
+            .content
+              =image_tag("primos_de_turno.png")
+              .inner-content
+                #turno
+        .content-main-right
+          .content  
+            =image_tag("laboratorios.png")
+            .inner-content  
+              #icinga
+          .content
+            =image_tag("twitter.png")
+            .inner-content
+              #twitter
+                %a.twitter-timeline{:href=>"https://twitter.com/utfsm_labs/dashboard", :'data-widget-id'=>"359818835689345027", :'data-chrome'=>"noscrollbar noheader nofooter transparent"} 
+
+          .content
+            =image_tag("frase.png")
+            .inner-content
+              #frases
+    .content-right
+      =render("camaras")

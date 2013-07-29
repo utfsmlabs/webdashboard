@@ -1,0 +1,39 @@
+#encoding: utf-8
+require 'open-uri'
+class DashboardController < ApplicationController
+  def index
+  end
+
+  def turno
+    base_url = "http://ctm.inf.santiago.usm.cl/pdts"
+    @turno = open(base_url).read
+    render :layout => false
+  end
+
+  def code
+    render :layout => false
+  end
+
+  def frases
+    render :layout => false
+  end
+
+  def icinga
+    render :layout => false
+  end
+
+  def servicios
+    render :layout => false
+  end
+
+  def twitter
+    Twitter.configure do |config|
+      config.consumer_key = Settings.twitter.consumer_key
+      config.consumer_secret = Settings.twitter.consumer_secret
+      config.oauth_token = Settings.twitter.oauth_token
+      config.oauth_token_secret = Settings.twitter.oauth_token_secret
+    end
+    @tweets = Twitter.home_timeline
+    render :layout => false
+  end
+end

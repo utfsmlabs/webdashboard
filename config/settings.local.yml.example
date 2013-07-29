@@ -1,0 +1,7 @@
+api_key:
+  code: "" 
+  icinga: ""
+  camera: ""
+twitter:
+  consumer_key:""
+  consumer_secret:""

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comment_user: MyString
+  message: MyString
+  message_date: 2013-07-23 23:44:24
+  task_id: 
+
+two:
+  comment_user: MyString
+  message: MyString
+  message_date: 2013-07-23 23:44:24
+  task_id: 
